@@ -118,7 +118,7 @@ public class Main {
         
         Book book;
         
-        if (bookType == 1) { // audiobook
+        if (bookType == 0) { // audiobook
             System.out.print("Length (in minutes): ");
             
             double length = getDoubleInput();
