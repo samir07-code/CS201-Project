@@ -46,17 +46,17 @@ public class PrintedBook extends Book {
     public static double getAveragePages(){
         List<HashMap<String, Object>> books = BookInterface.parseBooksJSON();
         
-        double totalPages = 0;
+        int totalPages = 0;
         int printedCount = 0;
         
         for (int i = 0; i < books.size(); i++) {
             if (!books.get(i).containsKey("pages")) continue;
-            totalPages += (double) books.get(i).get("pages");
+            totalPages += (int) books.get(i).get("pages");
             printedCount += 1;
         }
         
         if (printedCount == 0) return 0;
-        return totalPages / printedCount;
+        return (double) totalPages / printedCount;
     }
     
     public static String getLastThreePrintedBooks(){
