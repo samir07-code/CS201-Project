@@ -1,86 +1,79 @@
-[
-  {
-    "title": "Becoming",
-    "author": "Michelle Obama",
-    "genre": "Memoir",
-    "length": 1140.0,
-    "cost": 5700.0
-  },
-  {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "genre": "Fantasy",
-    "length": 680.0,
-    "cost": 3400.0
-  },
-  {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "genre": "Fiction",
-    "pages": 336,
-    "cost": 3360.0
-  },
-  {
-    "title": "Atomic Habits",
-    "author": "James Clear",
-    "genre": "Self-help",
-    "length": 320.0,
-    "cost": 1600.0
-  },
-  {
-    "title": "1984",
-    "author": "George Orwell",
-    "genre": "Dystopian",
-    "pages": 328,
-    "cost": 3280.0
-  },
-  {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "genre": "Fiction",
-    "pages": 180,
-    "cost": 1800.0
-  },
-  {
-    "title": "The Subtle Art of Not Giving a F*ck",
-    "author": "Mark Manson",
-    "genre": "Self-help",
-    "length": 300.0,
-    "cost": 1500.0
-  },
-  {
-    "title": "Educated",
-    "author": "Tara Westover",
-    "genre": "Memoir",
-    "pages": 352,
-    "cost": 3520.0
-  },
-  {
-    "title": "Dune",
-    "author": "Frank Herbert",
-    "genre": "Science Fiction",
-    "pages": 688,
-    "cost": 6880.0
-  },
-  {
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "genre": "Fiction",
-    "length": 240.0,
-    "cost": 1200.0
-  },
-  {
-    "title": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "genre": "History",
-    "pages": 498,
-    "cost": 4980.0
-  },
-  {
-    "title": "The Silent Patient",
-    "author": "Alex Michaelides",
-    "genre": "Thriller",
-    "length": 540.0,
-    "cost": 2700.0
-  }
-]
+[ {
+  "cost" : 5700.0,
+  "author" : "Michelle Obama",
+  "genre" : "Memoir",
+  "length" : 1140.0,
+  "title" : "Becoming"
+}, {
+  "cost" : 3400.0,
+  "author" : "J.R.R. Tolkien",
+  "genre" : "Fantasy",
+  "length" : 680.0,
+  "title" : "The Hobbit"
+}, {
+  "pages" : 336,
+  "cost" : 3360.0,
+  "author" : "Harper Lee",
+  "genre" : "Fiction",
+  "title" : "To Kill a Mockingbird"
+}, {
+  "cost" : 1600.0,
+  "author" : "James Clear",
+  "genre" : "Self-help",
+  "length" : 320.0,
+  "title" : "Atomic Habits"
+}, {
+  "pages" : 328,
+  "cost" : 3280.0,
+  "author" : "George Orwell",
+  "genre" : "Dystopian",
+  "title" : "1984"
+}, {
+  "pages" : 180,
+  "cost" : 1800.0,
+  "author" : "F. Scott Fitzgerald",
+  "genre" : "Fiction",
+  "title" : "The Great Gatsby"
+}, {
+  "cost" : 1500.0,
+  "author" : "Mark Manson",
+  "genre" : "Self-help",
+  "length" : 300.0,
+  "title" : "The Subtle Art of Not Giving a F*ck"
+}, {
+  "pages" : 352,
+  "cost" : 3520.0,
+  "author" : "Tara Westover",
+  "genre" : "Memoir",
+  "title" : "Educated"
+}, {
+  "pages" : 688,
+  "cost" : 6880.0,
+  "author" : "Frank Herbert",
+  "genre" : "Science Fiction",
+  "title" : "Dune"
+}, {
+  "cost" : 1200.0,
+  "author" : "Paulo Coelho",
+  "genre" : "Fiction",
+  "length" : 240.0,
+  "title" : "The Alchemist"
+}, {
+  "pages" : 498,
+  "cost" : 4980.0,
+  "author" : "Yuval Noah Harari",
+  "genre" : "History",
+  "title" : "Sapiens"
+}, {
+  "cost" : 2700.0,
+  "author" : "Alex Michaelides",
+  "genre" : "Thriller",
+  "length" : 540.0,
+  "title" : "The Silent Patient"
+}, {
+  "pages" : 374,
+  "cost" : 3740.0,
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopian",
+  "title" : "The Hunger Games"
+} ]
