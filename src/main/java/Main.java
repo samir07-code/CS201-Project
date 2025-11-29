@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +12,8 @@ public class Main {
         
         while (!isValid) {
             try {
-                result = input.nextInt();
-            } catch (InputMismatchException e){
+                result = Integer.parseInt(input.nextLine());
+            } catch (Exception e){ // number format exception
                 System.out.print("Invalid input, try again: ");
                 continue;
             }
@@ -37,8 +36,8 @@ public class Main {
         
         while (!isValid) {
             try {
-                result = input.nextDouble();
-            } catch (InputMismatchException e){
+                result = Double.parseDouble(input.nextLine());
+            } catch (Exception e){ // number format exception and null pointer exception
                 System.out.println("Invalid input, try again: ");
                 continue;
             }
@@ -79,6 +78,7 @@ public class Main {
     
     public static void awaitEnter() {
         Scanner input = new Scanner(System.in);
+        System.out.print(" ");
         input.nextLine();
     }
     
@@ -173,10 +173,10 @@ public class Main {
             System.out.println(res);
         } else {
             double avg = PrintedBook.getAveragePages();
-            System.out.println("The average length of the printed books in the database is " + avg + " pages.");
+            System.out.println(String.format("The average length of the printed books in the database is %.2f pages.", avg));
         }
         
-        System.out.println("Enter to continue: ");
+        System.out.print("Enter to continue: ");
         awaitEnter();
     }
     
@@ -207,17 +207,17 @@ public class Main {
             System.out.println(res);
         } else {
             double avg = AudioBook.getAverageLength();
-            System.out.println("The average length of the audio books in the database is " + avg + " minutes.");
+            System.out.println(String.format("The average length of the audio books in the database is %.2f minutes.", avg));
         }
         
-        System.out.println("Enter to continue: ");
+        System.out.print("Enter to continue: ");
         awaitEnter();
     }
     
     public static void displayLastTen(){
         staticAccess.displayLastTenBooks();
         
-        System.out.println("Enter to continue: ");
+        System.out.print("Enter to continue: ");
         awaitEnter();
     }
     
@@ -226,7 +226,7 @@ public class Main {
         
         System.out.println(String.format("Total collection cost: $%.2f.", total));
         
-        System.out.println("Enter to continue: ");
+        System.out.print("Enter to continue: ");
         awaitEnter();
     }
     
@@ -238,7 +238,7 @@ public class Main {
         
         System.out.println();
         
-        System.out.println("Enter to continue: ");
+        System.out.print("Enter to continue: ");
         awaitEnter();
     }
     
@@ -267,6 +267,7 @@ public class Main {
                 case 5 -> displayTotal(); // total price
                 case 6 -> genrePage(); // genre
                 case 7 -> isRunning = false;
+                default -> System.out.println("Unknown command! ");
             }
         }
         
